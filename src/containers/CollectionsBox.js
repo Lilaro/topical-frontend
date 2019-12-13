@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Collection from './Collection'
+import {Form} from 'react-bootstrap'
 
 export class CollectionsBox extends Component {
 
@@ -7,8 +8,8 @@ export class CollectionsBox extends Component {
     return (
       <div>
         <h4>Your Topics</h4>
-        <form onSubmit={this.props.createCollection}>
-          <input 
+        <Form onSubmit={this.props.createCollection}>
+          <Form.Control 
             type="text" 
             name="collectionName" 
             placeholder='Create a New Collection'
@@ -16,7 +17,7 @@ export class CollectionsBox extends Component {
             onChange={this.props.handleChange}
           />
           <input type="submit" value="Add Collection"/>
-        </form>
+        </Form>
         <br/>
         {this.props.collections.sort((a, b) => a.name.localeCompare(b.name)).map(collection =>
           <Collection 

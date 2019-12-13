@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button} from 'react-bootstrap'
 
 function Header(props) {
   return (
@@ -18,7 +19,7 @@ function Header(props) {
       {props.token ?
         <span>
           <pre style={{color: '#a9bad6'}}>Welcome to Topical, {props.userName}!</pre>
-          <button style={{float: 'right'}} onClick={props.logOutClicked}>Log Out</button>
+          <Button variant='info' style={{float: 'right'}} onClick={props.logOutClicked}>Log Out</Button>
         </span> :
           null
       }

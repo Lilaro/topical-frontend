@@ -31,7 +31,7 @@ class MainContainer extends Component {
       this.setState({
         ...this.state,
         articles: data
-      })
+      }, console.log('articles', data))
     })    
   }
 
@@ -50,7 +50,8 @@ class MainContainer extends Component {
       this.setState({
         ...this.state,  
         collections: userCollections
-      })
+      }, console.log('collections', data)
+      )
     })
   }   
   
