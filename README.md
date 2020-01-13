@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img 
+  src="public/images/banner.png" 
+  alt="Topical banner" 
+  width="1350" 
+  height="100"
+/>
 
-## Available Scripts
+App for scanning the New York Times and creating collections of articles based on specific 
+topics of interest. It is a project application done for module 4 of Flatiron School. 
+This project has several unfinsihed features and bugs that will be worked out in the future.
+To-dos include: 
+  - repair functionality of React Router
+  - add custom validation error messages
+  - enhance styling
 
-In the project directory, you can run:
+## Authors
+  - Lisa LaRochelle | [lilaro](https://github.com/lilaro)
+  - Dan Romans | [dangrammer](https://github.com/dangrammer)
 
-### `yarn start`
+## Frontend Repository
+  - [Topical Client](https://github.com/dangrammer/topical-frontend)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Ruby Version
+  - ruby 2.6.1
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Rails Version
+  - rails ~> 6.0.0
 
-### `yarn test`
+## Database
+  - postgreSQL
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Gem Dependencies
+  - active_model_serializers ~> 0.10.0
+  - rest-client ~> 2.1.0
+  - rack-cors
+  - bcrypt ~> 3.1.7
+  - jwt ~> 2.2, >= 2.2.1
+  - dotenv-rails
 
-### `yarn build`
+## Live Demo
+  Link to walkthrough video with narration:
+  <br/>
+  <a href="https://www.youtube.com/watch?v=A3ZJxHjNVtE&feature=youtu.be" target="_blank">
+    <img 
+      src="public/images/homepage.png" 
+      alt="Topical walkthrough demo link to Youtube" 
+      width="300" 
+      height="200"
+    />
+  </a>  
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  Login/Signup
+  <br/>
+  ![Login/Signup Demo](public/gifs/login_signup.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Filter Articles
+  <br/>
+  ![Filter Demo](public/gifs/filter_article.gif)
 
-### `yarn eject`
+  Add, Edit, and Delete Collection
+  <br/>
+  ![Collections Demo](public/gifs/add_edit_delete_collection.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  Add and Edit Articles and Notes
+  <br/>
+  ![Articles Demo](public/gifs/add_edit_collection_and_notes.gif)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## How To Install and Run
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  1. fork (optional) then clone or download this repository to local machine
+  2. use text editor and/or terminal to navigate into `topical-backend` directory
+  3. run `bundle install` (or `bundle i`) in terminal to install necessary dependencies
+  4. run `rails db:create` in terminal to create database
+  5. run `rails db:migrate` in terminal to initialize database
+  6. create secret keys:
+      - create a `.env` file in root directory
+      - write secret keys for JWT and NYT API in `.env` file:
+        ```
+        JWT_SECRET_KEY=KEY_HERE
+        NYT_API_KEY=KEY_HERE
+        # see note below
+        ```
+  7. run `rails db:seed` in terminal to seed database with article data
+  8. run `rails s` in terminal to run server in browser at http://localhost:3000/
+  9. install and run [Topical frontend](https://github.com/dangrammer/topical-frontend)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  *_Note:_ `KEY_HERE` _should be characters of your choice for_ `JWT_SECRET_KEY` _and an
+  individually assigned key from the New York Times developer portal for_ `NYT_API_KEY` _.
+  An API key for the NYT website can be attained by signing up with the_ [NYT Developer Network](https://developer.nytimes.com/)_. It is simple and free to do so._ **Always include** `.env` **file in** `.gitignore` **file**.
