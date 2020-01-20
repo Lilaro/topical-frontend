@@ -26,7 +26,7 @@ function Article(props) {
     <Card bg="light" style={{width: '17rem'}}>
       <Card.Img style={{height: '182px'}} variant="top" src={props.article.image_url}/>
       <Card.Body style={{overflow: 'scroll', height: '300px'}}>
-        <Card.Title><a variant="info" href={props.article.url} >{props.article.title}</a></Card.Title>
+        <Card.Title><a variant="info" href={props.article.url} target={"_blank"} >{props.article.title}</a></Card.Title>
         <Card.Text>
           <span>{props.article.author}</span><br/>
           <pre>{publication_date}</pre><br/>
