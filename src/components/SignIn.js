@@ -3,7 +3,7 @@ import {Form} from 'react-bootstrap'
 
 function SignIn(props) {
   return (
-    <Form onSubmit={props.loginSubmitted}>
+    <Form onSubmit={props.loginSubmitted} style={{paddingLeft: '10px'}}>
       <input 
         type="text" 
         name="loginUsername" 
