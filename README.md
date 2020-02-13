@@ -12,31 +12,6 @@ topics of interest.
   - Lisa LaRochelle | [lilaro](https://github.com/lilaro)
   - Dan Romans | [dangrammer](https://github.com/dangrammer)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Frontend Repository
-  - [Topical Client](https://github.com/dangrammer/topical-frontend)
-
-## Ruby Version
-  - ruby 2.6.1
-
-## Rails Version
-  - rails ~> 6.0.0
-
-## Database
-  - postgreSQL
-
-## Gem Dependencies
-  - active_model_serializers ~> 0.10.0
-  - rest-client ~> 2.1.0
-  - rack-cors
-  - bcrypt ~> 3.1.7
-  - jwt ~> 2.2, >= 2.2.1
-  - dotenv-rails
-=======
-##  Repository
-  - [Topical API](https://github.com/dangrammer/topical-)
-
 ## Languages/Libraries:
 
   - HTML5 (JSX)
@@ -49,11 +24,6 @@ topics of interest.
   - React-Bootstrap ^1.0.0-beta.14
   - React-Scripts ^3.2.0 
   - Bootstrap ^4.3.1
->>>>>>> 6d39fc365940fd391cd938f22f11605f4da674a1
-=======
-##  Repository
-  - [Topical Client](https://github.com/Lilaro/Topical-)
->>>>>>> working-branch
 
 ## Live Demo
   Link to walkthrough video with narration:
@@ -71,7 +41,6 @@ topics of interest.
 
   Login/Signup
   <br/>
-<<<<<<< HEAD
   ![Login/Signup Demo](public/gifs/login_signup.gif)
 
   Filter Articles
@@ -87,64 +56,12 @@ topics of interest.
   ![Articles Demo](public/gifs/add_edit_collection_and_notes.gif)
 
 
-## How To Install and Run
-
-<<<<<<< HEAD
-  1. fork (optional) then clone or download this repository to local machine
-  2. use text editor and/or terminal to navigate into `topical-` directory
-  3. run `bundle install` (or `bundle i`) in terminal to install necessary dependencies
-  4. run `rails db:create` in terminal to create database
-  5. run `rails db:migrate` in terminal to initialize database
-  6. create secret keys:
-      - create a `.env` file in root directory
-      - write secret keys for JWT and NYT API in `.env` file:
-        ```
-        JWT_SECRET_KEY=KEY_HERE
-        NYT_API_KEY=KEY_HERE
-        # see note below
-        ```
-  7. run `rails db:seed` in terminal to seed database with article data
-  8. run `rails s` in terminal to run server in browser at http://localhost:3000/
-  9. install and run [Topical frontend](https://github.com/dangrammer/topical-frontend)
-
-  *_Note:_ `KEY_HERE` _should be characters of your choice for_ `JWT_SECRET_KEY` _and an
-  individually assigned key from the New York Times developer portal for_ `NYT_API_KEY` _.
-  An API key for the NYT website can be attained by signing up with the_ [NYT Developer Network](https://developer.nytimes.com/)_. It is simple and free to do so._ **Always include** `.env` **file in** `.gitignore` **file**.
-=======
-  ![Login/Signup Demo](public/gifs/loginSignup.gif)
-
-  Filter Articles
-  <br/>
-  ![Filter Demo](public/gifs/filterArticle.gif)
-
-  Add, Edit, and Delete Collection
-  <br/>
-  ![Collections Demo](public/gifs/addEditDeleteCollection.gif)
-
-  Add and Edit Articles and Notes
-  <br/>
-  ![Articles Demo](public/gifs/addEditCollectionAndNotes.gif)
-
 ## How To Install and Run 
 
-  1. install and run [Topical  API](https://github.com/dangrammer/topical-)
-  2. fork (optional) then clone or download this repository to local machine
-  3. use text editor and/or terminal to navigate into `topical-frontend` directory
-  4. run `npm install` (or `npm i`) in terminal to install necessary dependencies
-  5. run `npm start` in terminal to launch the app in browser
-
-  *_Note: If  server is already running, it will be running on http://localhost:3000/. After 
-  running_ `npm start`_, follow prompt and enter_ `y` _in terminal to run frontend on alternate port._
-
-
-
->>>>>>> 6d39fc365940fd391cd938f22f11605f4da674a1
-=======
-  1. install and run [Topical ](https://github.com/Lilaro/Topical-)
+  1. install and run the [topical backend](https://github.com/Lilaro/Topical-backend)
   2. fork (optional) then clone or download this repository to your local machine
   3. navigate to Topical-frontend in terminal
   4. run npm install (or npm i) in terminal to install necessary dependencies
   5. run npm start in terminal to launch the app in browser
   
-  *_Note:_ If  server is already running, it will be running on http://localhost:3000/. After running npm start, follow prompt and enter y in terminal to run frontend on alternate port.
->>>>>>> working-branch
+  *_Note:_ If  server is already running, it will be running on http://localhost:3000/. After running npm start, follow prompt and enter y in terminal to run frontend on alternate 
