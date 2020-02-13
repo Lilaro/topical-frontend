@@ -63,20 +63,20 @@ export default class App extends Component {
               loggedInUserId={this.state.loggedInUserId}
             />
           </> : 
-            <>
-              <pre>
+          <>
+            <pre style={{paddingLeft: '10px', paddingTop: '25px'}}>
                 Topical is the premiere website for scanning the New York Times,<br/>
                 creating customized collections of articles, and keeping notes on<br/>
                 your topics of interest. Hot off the press, just as you want it.
               </pre>
-              <Login gotToken={this.gotToken}/>
-              <pre>
-                Disclaimer: The New York Times has a paywall on their website.<br/>
-                Topical allows for collecting articles with photo, title, byline,<br/> 
-                publication date, abstract, and weblink, however, access to full<br/>
-                article content will require users to engage said paywall. It's cheap!
-              </pre>
-            </>
+            <Login gotToken={this.gotToken} />
+            <pre style={{paddingLeft: '10px'}}>
+              Disclaimer: The New York Times has a paywall on their website.<br/>
+              Topical allows for collecting articles with photo, title, byline,<br/> 
+              publication date, abstract, and weblink, however, access to full<br/>
+              article content will require users to engage said paywall. It's cheap!
+            </pre>
+          </>
         }
       </>
       // </Jumbotron>

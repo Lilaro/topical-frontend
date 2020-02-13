@@ -3,7 +3,7 @@ import {Form} from 'react-bootstrap'
 
 function SignUp(props) {
   return (
-    <Form onSubmit={props.SignUpSubmitted}>
+    <Form onSubmit={props.SignUpSubmitted} style={{paddingLeft: '10px'}} >
       <input 
         type="text" 
         name="signupName"

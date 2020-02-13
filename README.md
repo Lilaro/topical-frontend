@@ -6,17 +6,13 @@
 />
 
 App for scanning the New York Times and creating collections of articles based on specific 
-topics of interest. It is a project application done for module 4 of Flatiron School. 
-This project has several unfinsihed features and bugs that will be worked out in the future.
-To-dos include: 
-  - repair functionality of React Router
-  - add custom validation error messages
-  - enhance styling
+topics of interest. 
 
 ## Authors
   - Lisa LaRochelle | [lilaro](https://github.com/lilaro)
   - Dan Romans | [dangrammer](https://github.com/dangrammer)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Frontend Repository
   - [Topical Client](https://github.com/dangrammer/topical-frontend)
@@ -38,8 +34,8 @@ To-dos include:
   - jwt ~> 2.2, >= 2.2.1
   - dotenv-rails
 =======
-## Backend Repository
-  - [Topical API](https://github.com/dangrammer/topical-backend)
+##  Repository
+  - [Topical API](https://github.com/dangrammer/topical-)
 
 ## Languages/Libraries:
 
@@ -54,11 +50,15 @@ To-dos include:
   - React-Scripts ^3.2.0 
   - Bootstrap ^4.3.1
 >>>>>>> 6d39fc365940fd391cd938f22f11605f4da674a1
+=======
+##  Repository
+  - [Topical Client](https://github.com/Lilaro/Topical-)
+>>>>>>> working-branch
 
 ## Live Demo
   Link to walkthrough video with narration:
   <br/>
-  <a href="https://www.youtube.com/watch?v=A3ZJxHjNVtE&feature=youtu.be" target="_blank">
+  <a href="https://www.youtube.com/watch?v=PoOk0inSqJg" target="_blank">
     <img 
       src="public/images/homepage.png" 
       alt="Topical walkthrough demo link to Youtube" 
@@ -89,8 +89,9 @@ To-dos include:
 
 ## How To Install and Run
 
+<<<<<<< HEAD
   1. fork (optional) then clone or download this repository to local machine
-  2. use text editor and/or terminal to navigate into `topical-backend` directory
+  2. use text editor and/or terminal to navigate into `topical-` directory
   3. run `bundle install` (or `bundle i`) in terminal to install necessary dependencies
   4. run `rails db:create` in terminal to create database
   5. run `rails db:migrate` in terminal to initialize database
@@ -126,15 +127,24 @@ To-dos include:
 
 ## How To Install and Run 
 
-  1. install and run [Topical backend API](https://github.com/dangrammer/topical-backend)
+  1. install and run [Topical  API](https://github.com/dangrammer/topical-)
   2. fork (optional) then clone or download this repository to local machine
   3. use text editor and/or terminal to navigate into `topical-frontend` directory
   4. run `npm install` (or `npm i`) in terminal to install necessary dependencies
   5. run `npm start` in terminal to launch the app in browser
 
-  *_Note: If backend server is already running, it will be running on http://localhost:3000/. After 
+  *_Note: If  server is already running, it will be running on http://localhost:3000/. After 
   running_ `npm start`_, follow prompt and enter_ `y` _in terminal to run frontend on alternate port._
 
 
 
 >>>>>>> 6d39fc365940fd391cd938f22f11605f4da674a1
+=======
+  1. install and run [Topical ](https://github.com/Lilaro/Topical-)
+  2. fork (optional) then clone or download this repository to your local machine
+  3. navigate to Topical-frontend in terminal
+  4. run npm install (or npm i) in terminal to install necessary dependencies
+  5. run npm start in terminal to launch the app in browser
+  
+  *_Note:_ If  server is already running, it will be running on http://localhost:3000/. After running npm start, follow prompt and enter y in terminal to run frontend on alternate port.
+>>>>>>> working-branch
